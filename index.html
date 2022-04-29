@@ -10,18 +10,22 @@
 </head>
 
 <body>
-    <h1>Cifra de César</h1>
-    <h3>Selecione a melhor opção para codificar ou decodificar uma mensagem!</h3>
+    <div id="título">
+        <h1>Cifra de César</h1></br>
+        <h3>Selecione a melhor opção para codificar ou decodificar uma mensagem!</h3></br>
+    </div>
     <div id="cardPrincipal">
-        <div>
-            <div><label>Texto Original</label>
+        <div id="caixasDeTexto">
+            <div>
+                <p>Texto Original</p></br>
                 <input type="text" nome="Texto Original" placeholder="Digite seu texto aqui!">
-            </div>
-            <div><label>Texto Decodificado</label>
-                <input type="text" nome="Texto Decodificado" placeholder="Digite seu texto aqui!">
+            </div></br></br></br>
+            <div>
+                <p>Texto Decodificado</p></br>
+                <input type="text" nome="Texto Decodificado" placeholder="Resultado!">
             </div>
         </div>
-        <div>
+        <div id="botões">
             <select>
                 <option>Base 64</option>
                 <option>Base 18</option>
