@@ -10,36 +10,52 @@
 </head>
 
 <body>
-    <div id="título">
-        <h1>Cifra de César</h1></br>
-        <h3>Selecione a melhor opção para codificar ou decodificar uma mensagem!</h3></br>
+    <div class="título">
+        <h1>Decodificador</h1>
+        <h3>Selecione a melhor opção para codificar ou decodificar uma mensagem!</h3>
     </div>
-    <div id="cardPrincipal">
-        <div id="caixasDeTexto">
-            <div>
-                <p>Texto Original</p></br>
-                <input type="text" nome="Texto Original" placeholder="Digite seu texto aqui!">
-            </div></br></br></br>
-            <div>
-                <p>Texto Decodificado</p></br>
-                <input type="text" nome="Texto Decodificado" placeholder="Resultado!">
-            </div>
-        </div>
-        <div id="botões">
-            <select>
-                <option>Base 64</option>
-                <option>Base 18</option>
-                <option>Base 22</option>
-                <option>Base 10</option>
-                <option>Base 81</option>
-            </select>
 
-            <div>
-                <button>Codificar</button>
-                <button>Descodificar</button>
-            </div>
+    <div class="cardPrincipal">
+
+        <div id="mensagemDiv">
+            <p>Mensagem:</p>
+            <input type="text" nome="Texto Original" class="texto" id="mensagem"
+                placeholder="Digite a sua mensagem aqui!">
         </div>
-        <script src="./index.js"></script>
+
+        <hr size="5" width="50%" align="center" color="black" noshade>
+
+        <select id="metodo" class="selecionar">
+            <option value="">Selecione um método</option>
+            <option value="base64">Base 64</option>
+            <option value="cesar">Cifra de César</option>
+        </select>
+
+        <div id="passos" class="numeroPassosDiv">
+            <label>Número de passos:</label>
+            <input type="number" class="numeroPassos" min="1" max="20" required>
+        </div>
+
+        <div class="codedecode">
+            <input id="radiocodificar" type="radio" name="code" value="codificar" />
+            <label>Codificar</label>
+            <input id="radiodecodificar" type="radio" name="code" value="decodificar" />
+            <label>Decodificar</label>
+        </div>
+
+        <hr size="5" width="50%" align="center" color="black" noshade>
+
+        <div class="resultadoDiv">
+            <p>Resultado:</p>
+            <input type="text" nome="Texto Original" class="texto" id="Resultado"
+                placeholder="O resultado aparecerá aqui!">
+        </div>
+
+        <button id="decodificar">Decodificar</button>
+
+    </div>
+
+    <script src="./index.js"></script>
 </body>
 
 </html>
