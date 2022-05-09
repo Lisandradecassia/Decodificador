@@ -19,39 +19,44 @@
 
         <div id="mensagemDiv">
             <p>Mensagem:</p>
-            <input type="text" nome="Texto Original" class="texto" id="mensagem"
-                placeholder="Digite a sua mensagem aqui!">
+            <input type="text" nome="mensagem" class="texto" id="mensagem" placeholder="Digite a sua mensagem aqui!">
         </div>
 
         <hr size="5" width="50%" align="center" color="black" noshade>
 
-        <select id="metodo" class="selecionar">
-            <option value="">Selecione um método</option>
-            <option value="base64">Base 64</option>
-            <option value="cesar">Cifra de César</option>
+        <select id="metodo" name="metodo" class="selecionar" required>
+            <option value="selecione" id="selecione">Selecione um método</option>
+            <option value="base64" id="base64">Base 64</option>
+            <option value="cesar" id="cesar">Cifra de César</option>
         </select>
 
-        <div id="passos" class="numeroPassosDiv">
+        <div id="passosDiv" class="numeroPassosDiv">
             <label>Número de passos:</label>
-            <input type="number" class="numeroPassos" min="1" max="20" required>
+            <input name="passosDiv" type="number" id="numeroPassos" class="numeroPassos" min="1" max="20" required>
         </div>
 
-        <div class="codedecode">
-            <input id="radiocodificar" type="radio" name="code" value="codificar" />
-            <label>Codificar</label>
-            <input id="radiodecodificar" type="radio" name="code" value="decodificar" />
-            <label>Decodificar</label>
+        <div id="codidecod" class="codidecode">
+            <div class="cod" id="cod">
+                <input id="codificar" type="radio" name="botao" value="" />
+                <label>Codificar</label>
+            </div>
+
+            <div class="decod" id="decod">
+                <input id="decodificar" type="radio" name="botao" value="" />
+                <label>Decodificar</label>
+            </div>
         </div>
 
         <hr size="5" width="50%" align="center" color="black" noshade>
 
         <div class="resultadoDiv">
             <p>Resultado:</p>
-            <input type="text" nome="Texto Original" class="texto" id="Resultado"
-                placeholder="O resultado aparecerá aqui!">
+            <output id="resultado" class="resultado" placeholder="O resultado aparecerá aqui!"></output>
         </div>
 
-        <button id="decodificar">Decodificar</button>
+        <div class="botao-hmtl" id="botao">
+            <button class="btn-html" id="btn">Codificar</button>
+        </div>
 
     </div>
 

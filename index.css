@@ -108,7 +108,6 @@ input.numeroPassos {
 }
 
 
-
 .selecionar {
     display: flex;
     flex-direction: column;
@@ -118,9 +117,21 @@ input.numeroPassos {
 }
 
 
-.codedecode {
+.codidecode {
     height: 1rem;
     display: flex;
     gap: 1rem;
     align-items: center;
+    text-align: center;
+    flex-direction: row;
+}
+output{
+    height: 5rem;
+    width: 24rem;
+    border: none;
+    border-radius: 0.3rem;
+    padding: 1rem;
+    background-color: white;
+    display: flex;
+
 }
